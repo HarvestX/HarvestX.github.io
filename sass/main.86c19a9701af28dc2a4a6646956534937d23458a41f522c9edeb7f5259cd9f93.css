@@ -1445,3 +1445,44 @@ footer {
     @media screen and (min-width: 1080px) {
       .githublink img {
         width: 50%; } }
+.pointbox {
+  border: 2px solid #D6315A;
+  border-left-width: 6px;
+  padding: 24px 20px;
+  margin-bottom: 24px; }
+  @media screen and (min-width: 1080px) {
+    .pointbox {
+      padding: 32px 40px;
+      margin-bottom: 32px; } }
+  .pointbox_title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 16px; }
+    @media screen and (min-width: 1080px) {
+      .pointbox_title {
+        font-size: 20px; } }
+  .pointbox_list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .pointbox_item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 16px; }
+    .pointbox_item:last-child {
+      margin-bottom: 0; }
+    .pointbox_item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #D6315A; }
+    .pointbox_item-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 0 8px !important; }
+    .pointbox_item-text {
+      margin: 0 !important; }
